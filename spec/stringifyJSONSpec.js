@@ -14,5 +14,10 @@ describe("stringifyJSON", function(){
       expect(result).toEqual(expected);
     });
 
+    extraCreditStrings.forEach(function(obj){
+      var result = stringifyJSON(obj);
+      var expected = JSON.stringify(obj);
+      expect(result).toEqual(expected);
+    });
   });
 });
