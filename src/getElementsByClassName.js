@@ -5,7 +5,8 @@
 
 // But in stead we're going to implement it from scratch:
 var getElementsByClassName = function (className) {
-   
+  
+  // Define subroutine. 
   var iterator = function(results,currentNode) {
 
   	// Checks if currentNode has className.
